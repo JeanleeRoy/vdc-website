@@ -1,0 +1,162 @@
+.testimonials {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+.testimonials h2 {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.testi-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column-reverse;
+}
+
+.testi-group,
+.testi-wrapper {
+    width: 100%;
+    padding: 1rem;
+}
+
+.testi-group > div {
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+.testi-group img {
+    display: block;
+    width: 100%;
+    max-width: 348px;
+}
+
+.testi-group > div::after {
+    content: "";
+    position: absolute;
+    left: 2.6rem;
+    bottom: -1.5em;
+    width: 10em;
+    height: 10em;
+    border-radius: 50%;
+    background: #72A93B80;
+    z-index: -1;
+}
+
+.testi-slide {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+}
+
+.testi-image {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+    padding-top: min(100%, 340px);
+    margin: auto;
+    margin-top: 1rem;
+}
+
+.testi-image img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 50% 0 50% 50%;
+    box-shadow: var(--box-shadow-right);
+}
+
+.testi-image::before {
+    content: url("../../img/Home/ring.png");
+    position: absolute;
+    bottom: -.7rem;
+    left: -.7rem;
+}
+
+.testi-content {
+    width: 100%;
+    max-width: 460px;
+    padding: 1.5rem 1rem;
+    margin: auto;
+    text-align: center;
+}
+
+.testi-name {
+    font-size: 1.2rem;
+    margin-bottom: .5rem;
+    font-weight: 600;
+}
+
+.testi-role {
+    display: block;
+    font-size: .9rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.testi-description {
+    font-size: .9rem;
+    color: var(--text-color);
+    line-height: 1.6;
+    text-align: start;
+}
+
+@media (min-width: 768px) {
+    .testimonials h2 {
+        margin-bottom: 0rem;
+    }
+    .testi-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+    .testi-image::before {
+        bottom: -.5rem;
+        left: -.5rem;
+    }
+    .testi-content {
+        padding: 2rem 3rem;
+        text-align: start;
+    }
+    .testi-group {
+        transform: translateY(-3rem);
+    }
+}
+
+@media (min-width: 1000px) {
+    .testimonials h2 {
+        margin-bottom: 1.5rem;
+    }
+    .testi-slide {
+        flex-wrap: nowrap;
+    }
+    .testi-image {
+        margin-top: 0;
+    }
+    .testi-role {
+        margin-bottom: 1.1rem;
+    }
+    .testi-content {
+        padding: 3rem;
+        transform: translateY(-1rem);
+    }
+    .testi-group {
+        width: 40%;
+        transform: translateY(-2rem) scale(1.15);
+    }
+    .testi-group > div::after {
+        width: 9.6em;
+        height: 9.6em;
+        left: 1.5rem;
+        bottom: -1.9em;
+    }
+}

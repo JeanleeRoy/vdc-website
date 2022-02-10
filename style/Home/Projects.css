@@ -47,6 +47,7 @@
 }
 
 .project-title {
+    width: 100%;
     padding: .5rem 0rem .2em;
     font-size: 1.2rem;
     min-height: 5.5ex;
@@ -84,7 +85,12 @@
         top: 0;
         box-shadow: 0 0 27px 25px white;
     }
-
     .project-slider::before { left: 0 }
     .project-slider::after { right: 0 }
+}
+
+@media (min-width: 1000px) {
+    .projects {
+        margin-bottom: 0;
+    }
 }
