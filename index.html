@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="style/Menu.css">
     <link rel="stylesheet" href="style/Home/Banner.css">
     <link rel="stylesheet" href="style/Home/Clients.css">
+    <link rel="stylesheet" href="style/Home/Services.css">
+    <link rel="stylesheet" href="style/swiper.css">
+    <link rel="stylesheet" href="style/Home/projects.css">
 
     <title>VDC &nbsp; | &nbsp; Home</title>
 </head>
@@ -85,7 +88,89 @@
             </div>
         </section>
 
+        <section class="services">
+            <div class="services-container">
+                <div class="content-text">
+                    <h2>Nuestros <span class="on-serv-break"></span> Servicios</h2>
+                    <p> Desde hace más de 20 años nuestro equipo a participado en Obras de Infraestructura de toda
+                        envergadura y complejidad, a nivel nacional; desafiando cualquier diseño.</p>
+                    <p>Hemos realizado más de 4,000,000 m² supervisados y más de 3,500 proyectos culminados.</p>
+                </div>
+                <div class="serv-shape">
+                    <div class="service-boxes">
+                        <div class="service-box">
+                            <div class="image light-blue">
+                                <img src="img/Home/box-search.png" alt="Supervición">
+                            </div>
+                            <h3>Supervisión de proyectos y gerenciamiento de obras de construcción</h3>
+                            <p>Gestión de operación con basta experiencia</p>
+                        </div>
+                        <div class="service-box">
+                            <div class="image light-pink">
+                                <img src="img/Home/code-1.png" alt="Ejecución">
+                            </div>
+                            <h3>Ejecución de obras de construcción</h3>
+                            <p>Capacidad de ejecución de cualquier tipo de proyecto de edificaciones</p>
+                        </div>
+                        <div class="service-box">
+                            <div class="image light-yellow">
+                                <img src="img/Home/empty-wallet.png" alt="Diseño">
+                            </div>
+                            <h3>Diseño arquitectónico de proyectos</h3>
+                            <p>Organizamos el trabajo a requerimiento del cliente</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects">
+            <div class="projects-container">
+                <h2>Nuestros Proyectos</h2>
+
+                <div class="swiper project-slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide project-card">
+                            <div class="project-image"> <img src="img/Home/torres-UTP.jpg" alt="Torres"> </div>
+                            <p class="project-title"> Universidad UTP Petit Thouars </p>
+                        </div>
+                
+                        <div class="swiper-slide project-card">
+                            <div class="project-image"> <img src="img/Home/U-parque.jpg" alt="Torres"> </div>
+                            <p class="project-title"> Estacionamientos y Parque de la Universidad de Lima</p>
+                        </div>
+                
+                        <div class="swiper-slide project-card">
+                            <div class="project-image"> <img src="img/Home/U-pabellon.jpg" alt="Torres"> </div>
+                            <p class="project-title"> Pabellón R - U de Lima</p>
+                        </div>
+                    </div>
+                    <button class="swiper-btn" id="prev-project">
+                        <svg class="_14x18"><use xlink:href="#prev-arw"></svg></button>
+                    <button class="swiper-btn" id="next-project">
+                        <svg class="_14x18"><use xlink:href="#next-arw"></svg></button>
+                </div>
+
+            </div>
+        </section>
+
     </main>
+
+    <div style="display: none;">
+        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="prev-arw">
+            <path d="M12.2001 2L3.80007 9L12.2001 16" stroke="#06457F" stroke-width="4"/>
+            </svg>
+        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg" id="next-arw">
+            <path d="M2 2L10 9L2 16" stroke="#06457F" stroke-width="4"/>
+        </svg>
+    </div>
+
+    <footer>
+
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/home/projects.js"></script>
 
 </body>
 
