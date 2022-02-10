@@ -1,0 +1,145 @@
+.banner {
+    width: 100%;
+    position: relative;
+    margin-bottom: 90px;
+}
+
+.banner-container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: .5rem auto 1rem;
+}
+
+.banner::before {
+    content: url('../../img/Home/elipse.png');
+    opacity: .4;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-65%);
+    z-index: -2;
+}
+
+.banner::after {
+    content: url('../../img/Home/rectangle.png');
+    position: absolute;
+    bottom: -85px;
+    right: 10%;
+    z-index: -2;
+}
+
+.welcome-banner {
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.welcome-banner > * {
+    width: 100%;
+    text-align: center;
+}
+
+.welcome-banner h1 {
+    font-size: 2em;
+    font-weight: 900;
+}
+
+.welcome-banner p {
+    color: var(--text-color);
+    margin-top: .6rem;
+    margin-bottom: 1.2rem;
+}
+
+.banner button {
+    background-color: var(--primary-color);
+    padding: 0.7rem 1.7rem;
+    border-radius: var(--br-radius);
+    color: white;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: .5rem;
+}
+
+.banner button:hover,
+.banner button:active {
+    opacity: 0.7;
+    box-shadow: var(--dark-box-shadow);
+    transition-duration: .2s;
+}
+
+.banner button:active { opacity: .5; }
+
+.banner .image {
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.banner .image img {
+    width: 100%;
+    max-width: 720px;
+    border-radius: 0 0 0 4rem;
+}
+
+@media (min-width: 678px) {
+    .banner {
+        display: flex;
+        margin-top: 0;
+    }
+    .banner::before {
+        opacity: .9;
+    }
+    .welcome-banner {
+        justify-content: start;
+        background-color: white;
+        margin: 5.1rem 0 7rem;
+        border-radius: var(--br-radius-sm);
+        padding: 1em;
+        z-index: 2;
+    }
+    .welcome-banner > * {
+        text-align: start;
+    }
+    .welcome-banner h1 {
+        font-size: 2.6rem;
+    }
+    .welcome-banner p {
+        font-size: 1.2rem;
+        line-height: 1.45em;
+        margin-bottom: 1.5rem;
+    }
+    .banner button {
+        padding: 0.9rem 1.9rem;
+        font-size: 1.1rem;
+    }
+    .banner .image {
+        margin: 0;
+    }
+    .banner img {
+        position: absolute;
+        top: 0;
+        right: -1rem;
+        border-radius: 0 0 0 10rem;
+        z-index: -1;
+    }
+}
+
+
+@media (min-width: 1000px) {
+    .banner::before {
+        transform: translateX(-80%);
+    }
+    .welcome-banner {
+        background-color: transparent;
+        transform: translateX(-1rem);
+        max-width: 430px;
+    }
+    .banner button {
+        padding: 1rem 2.1rem;
+        font-size: 1.12rem;
+        margin-top: .4rem;
+    }
+}
