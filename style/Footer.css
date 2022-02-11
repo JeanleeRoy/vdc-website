@@ -1,0 +1,158 @@
+footer {
+    padding: 2rem 2em 1rem;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 1rem auto 0;
+}
+
+.footer-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-container::before {
+    position: absolute;
+    content: "";
+    top: -2rem;
+    left: 0;
+    width: 100%;
+    border-top: 1px solid #E4E4E4;
+}
+
+.company-description {
+    max-width: 380px;
+    color: var(--text-color);
+    font-size: .8rem;
+    line-height: 1.5;
+    padding: 1rem 0;
+}
+
+.company-description img {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.footer-useful {
+    width: fit-content;
+    /* max-width: 380px; */
+    display: flex;
+    flex-direction: column;
+}
+
+.foo-use {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
+.foo-use h3 {
+    margin-bottom: 1rem;
+}
+
+.foo-use li {
+    font-size: .9rem;
+    margin-bottom: .5rem;
+    list-style: none;
+}
+
+.foo-use li img {
+    display: none;
+}
+
+.footer-social {
+    width: fit-content;
+    margin: auto;
+    padding-top: 1rem;
+    margin-bottom: .4rem;
+}
+
+.footer-social a {
+    margin-right: 1rem;
+}
+
+.footer-social a:last-child {
+    margin-right: 0;
+}
+
+@media (min-width: 420px) {
+    .footer-useful {
+        width: 100%;
+        max-width: 250px;
+    }
+    .foo-use li {
+        position: relative;
+    }
+    .foo-use li img {
+        display: block;
+        position: absolute;
+        left: -1.5rem;
+        top: 50%;
+        transform: translateY(-50%);
+        max-height: .9rem;
+    }
+}
+
+@media (min-width: 720px) {
+    .footer-useful {
+        width: 100%;
+        max-width: 100%;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .foo-use {
+        width: fit-content;
+        padding: 1rem;
+    }
+    .foo-use li img {
+        display: none;
+    }
+}
+
+@media (min-width: 1000px) {
+    footer {
+        margin-top: 2rem;
+    }
+    .footer-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .company-description {
+        max-width: 290px;
+    }
+    .company-description img {
+        margin-left: 0;
+        margin-bottom: .7rem;
+    }
+    .footer-useful {
+        width: fit-content;
+    }
+    .foo-use h3 {
+        margin-bottom: 1.5rem;
+    }
+    .foo-use li {
+        font-size: .8rem;
+        font-weight: lighter;
+        margin-bottom: .8rem;
+    }
+    .footer-contact {
+        margin-left: 1.5rem;
+    }
+    .foo-use li img {
+        display: block;
+    }
+    .footer-company {
+        margin-left: 1.5rem;
+    }
+    .footer-social {
+        width: 100%;
+    }
+    .footer-social a {
+        margin-right: .8rem;
+    }
+}
