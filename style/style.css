@@ -64,6 +64,15 @@ button {
     display: inline-block;
 }
 
+.hero-section {
+    width: 100%;
+    height: 320px;
+    background-color: var(--primary-color);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
 .primary-color { color: var(--primary-color) }
 .secondary-color { color: var(--secondary-color) }
 

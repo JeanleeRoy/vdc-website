@@ -1,0 +1,137 @@
+main {
+    padding: 1rem 0;
+}
+
+.about-container {
+    position: relative;
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.about-container::before {
+    position: absolute;
+    content: url(../../img/Home/elipse.png);
+    top: 62%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    opacity: .5;
+}
+
+.about-content {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 2rem 1.5rem;
+    background-color: var(--greyish-blue-a);
+    border-radius: 0 5rem 1rem 0;
+}
+
+.about-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -300px;
+    width: 300px;
+    height: 100%;
+    background-color: var(--greyish-blue-a);
+}
+
+.about-content > div {
+    width: 100%;
+    max-width: 470px; /**/
+    margin: auto;
+}
+
+.about-content h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    color: var(--text-color);
+    margin-bottom: .5rem;
+    font-size: .97rem;
+    line-height: 1.5;
+}
+
+.mision-vision {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.mv-card {
+    width: 100%;
+    max-width: 320px;
+    min-width: 200px;
+    padding: 3rem 2rem;
+    border-radius: var(--br-radius);
+    box-shadow: var(--box-shadow);
+    margin: 1rem 10px;
+}
+
+.mv-card h2 {
+    text-align: center;
+    margin-bottom: .5rem;
+}
+
+.mv-card p {
+    color: var(--text-color);
+    font-size: .905rem;
+    line-height: 1.43;
+}
+
+@media (min-width:900px) {
+    .about-container {
+        display: flex;
+        padding: 1rem 3rem;
+        align-items: center;
+    }
+    .about-container::before {
+        top: 30%;
+    }
+    .about-content {
+        padding-right: 2rem;
+        transform: translateY(-1rem);
+    }
+    .mision-vision {
+        flex-direction: column-reverse;
+        margin-left: 3rem;
+    }
+    .mv-card {
+        max-width: 370px;
+        padding: 2.5rem 2.8rem;
+        margin: 10px 1rem;
+        transition: var(--basic-transition);
+    }
+    .mv-card:last-child {
+        align-self: flex-end;
+    }
+    .about-vision {
+        z-index: 5;
+    }
+}
+
+@media (min-width: 1050px) {
+    .about-container {
+        padding: 1rem;
+        padding-top: 0;
+    }
+    .about-container::before {
+        top: 12%;
+    }
+    .about-content h1 {
+        font-size: 2.3rem;
+    }
+    .mv-card p {
+        line-height: 1.45;
+    }
+    .mv-card:hover {
+        transform: translateY(-1rem);
+        box-shadow: 0px 10px 50px rgba(115, 170, 60, 0.219);
+    }
+}
