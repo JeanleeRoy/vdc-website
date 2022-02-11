@@ -1,0 +1,75 @@
+.staff {
+    width: 100%;
+    padding: 2rem;
+    margin-top: 1rem;
+    background-color: #73AA3B1A;
+}
+
+.staff h2 {
+    font-size: var(--h2-font-size);
+    text-align: center;
+}
+
+.staff-container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.staff-card {
+    width: 100%;
+    max-width: 300px;
+    background-color: white;
+    padding: 2rem;
+    margin: 1rem 0; /**/
+    text-align: center;
+    border-radius: var(--br-radius-sm);
+}
+
+.staff-card .image {
+    position: relative;
+    width: 100%;
+    padding-top: 130%;
+}
+
+.staff-card .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.staff-card h3 {
+    padding: 1rem 0 1.5rem; /**/
+}
+
+.staff-card p {
+    font-size: .95rem;
+    font-weight: lighter;
+    line-height: 1.4;
+}
+
+@media (min-width: 650px) {
+    .staff h2 {
+        padding: .5rem;
+    }
+    .staff-card {
+        margin: 1rem;
+    }
+    .staff-card h3 {
+        padding: 1.4rem 0 1.6rem;
+    }
+    .staff-card img {
+        transition: all ease .4s;
+    }
+    .staff-card .image:hover img {
+        transform: scale(1.07);
+        border-radius: .7rem .7rem 0 0;  
+    }
+}
