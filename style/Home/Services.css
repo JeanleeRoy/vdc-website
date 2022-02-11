@@ -95,6 +95,7 @@
     .services .content-text {
         max-width: 280px;
         margin: 0;
+        padding-left: 2rem;
     }
     .services .content-text > * {
         margin-bottom: 1.2rem;
@@ -137,7 +138,7 @@
     }
 }
 
-@media (min-width: 900px) {
+@media (min-width: 950px) {
     .services-container {
         align-items: center;
         margin-top: 190px;
@@ -152,6 +153,8 @@
         top: -150px;
         right: .3rem;
         height: 800px;
+        padding-left: 2rem;
+        padding-right: 2rem;
         flex-direction: column;
         justify-content: center;
         /* align-items: flex-start; */
@@ -161,7 +164,7 @@
 
 @media (min-width: 1080px) {
     .service-boxes {
-        padding: 1rem 4% 1rem 20%;
+        padding: 1rem 10% 1rem 10%;
         right: 1rem;
     }
     .service-box:last-child {
@@ -169,5 +172,14 @@
     }
     .services-container .content-text {
         padding-right: 1rem;
+    }
+    .services .content-text {
+        max-width: 320px;
+    }
+}
+
+@media (min-width: 1190px) {
+    .service-boxes {
+        padding: 1rem 8% 1rem 16%;
     }
 }
