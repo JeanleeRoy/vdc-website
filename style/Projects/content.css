@@ -1,0 +1,132 @@
+main h1 {
+    font-size: var(--h2-font-size);
+    text-align: center;
+    margin: 2rem 0 1rem;
+    padding: 1rem;
+}
+
+.project-in-process {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: auto;
+    padding: 1rem;
+}
+
+.project-in-process h2 {
+    margin-bottom: 1rem;
+}
+
+.pjct-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem 0;
+}
+
+.pjct-summary {
+    position: relative;
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 2rem; /**/
+    border-radius: var(--br-radius-sm);
+    border: 1px solid var(--greyish-blue-a);
+}
+
+.pjct-summary::before {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-color: #949494;
+}
+
+.pjct-summary::after {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 2rem;
+    bottom: -2.05rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #949494;
+}
+
+.pjct-summary .image {
+    width: 100%;
+}
+
+.pjct-summary img {
+    width: 100%;
+    border-radius: var(--br-radius-sm) var(--br-radius-sm) 0 0;
+}
+
+.pjct-summary .content {
+    padding: 1rem 1.5rem;
+    text-align: center;
+}
+
+.pjct-summary h3 {
+    color: var(--primary-color);
+    font-weight: bolder;
+    font-size: 1.35rem;
+    margin-bottom: .2rem;
+}
+
+.pjct-summary p {
+    color: #94881b;
+    font-weight: bold;
+    font-size: 1.095rem;
+    margin-bottom: .2rem;
+}
+
+.pjct-detail {
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem 2.5rem;
+    color: var(--text-color);
+    line-height: 1.4;
+    background-color: var(--greyish-blue-a);
+    border-radius: var(--br-radius-sm);
+}
+
+.pjct-detail ul {
+    margin-left: 1rem;
+}
+
+@media (min-width: 768px) {
+    .pjct-container {
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    .pjct-detail {
+        max-width: 100%;
+        padding: 2.5rem 3.5rem;
+    }
+    .pjct-summary {
+        margin-bottom: 0;
+        margin-right: 2rem;
+    }
+    .pjct-summary::before,
+    .pjct-summary::after {
+        right: -6px;
+        left: unset;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .pjct-summary::after {
+        width: 2rem;
+        height: 3px;
+        right: -2.09rem;
+    }
+    .pjct-summary,
+    .pjct-detail {
+        box-shadow: var(--box-shadow);
+    }
+}
