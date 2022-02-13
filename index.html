@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <link rel="stylesheet" href="style/aos.css">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/Menu.css">
     <link rel="stylesheet" href="style/Home/Banner.css">
@@ -60,7 +61,7 @@
 
         <section class="banner">
             <div class="banner-container">
-                <div class="welcome-banner">
+                <div class="welcome-banner" data-aos="fade-right">
                     <h1 class="primary-color">Bienvenidos <span class="on-mobile">a</span> <br>
                         <span class="secondary-color"> <span class="on-desktop ">a</span> VDC</span>
                     </h1>
@@ -77,7 +78,7 @@
 
         <section class="clients">
             <h2>Nuestros Clientes</h2>
-            <div class="clients-container">
+            <div class="clients-container" data-aos="zoom-in-up">
                 <!-- <div class="client-box">
                     <img src="img/Home/UTP-logo.jpg" alt="Universidad Tecnológica del Perú">
                 </div> -->
@@ -103,27 +104,27 @@
             <div class="services-container">
                 <div class="content-text">
                     <h2>Nuestros <span class="on-serv-break"></span> Servicios</h2>
-                    <p> Desde hace más de 20 años nuestro equipo a participado en Obras de Infraestructura de toda
+                    <p data-aos="zoom-out-up"> Desde hace más de 20 años nuestro equipo a participado en Obras de Infraestructura de toda
                         envergadura y complejidad, a nivel nacional; desafiando cualquier diseño.</p>
-                    <p>Hemos realizado más de 4,000,000 m² supervisados y más de 3,500 proyectos culminados.</p>
+                    <p data-aos="zoom-out-up" data-aos-delay="100">Hemos realizado más de 4,000,000 m² supervisados y más de 3,500 proyectos culminados.</p>
                 </div>
                 <div class="serv-shape">
                     <div class="service-boxes">
-                        <div class="service-box">
+                        <div class="service-box" data-aos="fade-down" data-aos-delay="100">
                             <div class="image light-blue">
                                 <img src="img/Home/box-search.png" alt="Supervición">
                             </div>
                             <h3>Supervisión de proyectos y gerenciamiento de obras de construcción</h3>
                             <p>Gestión de operación con basta experiencia</p>
                         </div>
-                        <div class="service-box">
+                        <div class="service-box" data-aos="fade-up" data-aos-delay="150">
                             <div class="image light-pink">
                                 <img src="img/Home/code-1.png" alt="Ejecución">
                             </div>
                             <h3>Ejecución de obras de construcción</h3>
                             <p>Capacidad de ejecución de cualquier tipo de proyecto de edificaciones</p>
                         </div>
-                        <div class="service-box">
+                        <div class="service-box" data-aos="fade-left">
                             <div class="image light-yellow">
                                 <img src="img/Home/empty-wallet.png" alt="Diseño">
                             </div>
@@ -139,7 +140,7 @@
             <div class="projects-container">
                 <h2>Nuestra Experiencia</h2>
 
-                <div class="swiper project-slider">
+                <div class="swiper project-slider" data-aos="zoom-out">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide project-card">
                             <div class="project-image"> <img src="img/Home/torres-UTP.jpg" alt="Torres"> </div>
@@ -169,7 +170,7 @@
             <h2>¿Qué dicen de nosotros?</h2>
             <div class="testi-container">
                 <div class="testi-wrapper">
-                    <div class="testi-slide">
+                    <div class="testi-slide" data-aos="zoom-in-up">
                         <div class="testi-image">
                             <img src="img/Home/testi-1.jpg" alt="Jesús Sullón">
                         </div>
@@ -188,7 +189,7 @@
                     </div>
                     <div id="testi-navigation"></div>
                 </div>
-                <div class="testi-group">
+                <div class="testi-group" data-aos="zoom-in" data-aos-delay="500">
                     <div>
                         <img src="img/Home/group-people.png" alt="Grupo de personas">
                     </div>
@@ -216,7 +217,7 @@
             </div>
             <div class="footer-useful">
                 <div class="footer-contact foo-use">
-                    <h3><a href="/contacto.html"></a></h3>
+                    <h3><a href="/contacto.html">Contáctanos</a></h3>
                     <ul>
                         <li><img src="img/map-icon.png" alt="Dirección"> Cl. El Galeon, Mz. E, Lt. 01, Santiago de Surco</li>
                         <li><img src="img/phone-icon.png" alt="Teléfono"> +51 960189815</li>
@@ -248,6 +249,7 @@
         </div>
     </footer>
 
+    <script src="script/aos.js"></script>
     <script src="script/menu.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script src="script/home/projects.js"></script>
