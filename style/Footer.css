@@ -71,6 +71,10 @@ footer {
     margin-bottom: .4rem;
 }
 
+.company-description img {
+    height: 57px;
+}
+
 .footer-social a {
     margin-right: 1rem;
 }
