@@ -145,7 +145,8 @@ footer {
         margin-bottom: .8rem;
     }
     .footer-services {
-        margin-left: .5rem;
+        margin-left: .8rem;
+        max-width: 280px;
     }
     .footer-contact {
         margin-left: 1.5rem;

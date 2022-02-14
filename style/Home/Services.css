@@ -31,6 +31,8 @@
 .content-text p {
     line-height: 1.4em;
     padding: 0 1.5rem;
+    font-size: 1.3rem;
+    text-align: center;
 }
 
 .serv-shape {
@@ -69,6 +71,11 @@
     margin: auto;
     border-radius: var(--br-radius-sm);
     margin-bottom: 1.5rem;
+    height: 120px;
+}
+
+.service-box .image img {
+    height: 100%;
 }
 
 .services .image.light-blue { background-color: var(--light-sky-blue) }
@@ -80,6 +87,8 @@
     font-weight: 500;
     font-size: 1.3rem;
     line-height: 1.23em;
+    font-size: 1.9rem;
+    text-align: center;
 }
 
 .service-box p {
@@ -159,6 +168,9 @@
         justify-content: center;
         /* align-items: flex-start; */
         z-index: 1;
+    }
+    .content-text p {
+        text-align: start;
     }
 }
 

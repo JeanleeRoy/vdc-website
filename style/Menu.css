@@ -15,7 +15,7 @@ nav {
 }
 
 nav .logo-img {
-    height: 56px;
+    height: 80px;
 }
 
 .nav-items {
@@ -53,6 +53,9 @@ nav .logo-img {
 @media (min-width: 870px) {
     .burger-btn, .m-close-btn {
         display: none;
+    }
+    nav .logo-img {
+        height: 110px;
     }
     .nav-items {
         position: unset;
