@@ -46,14 +46,14 @@ main {
 }
 
 .about-content h1 {
-    font-size: 2rem;
+    font-size: var(--h2-font-size);
     margin-bottom: 1rem;
 }
 
 .about-content p {
     color: var(--text-color);
     margin-bottom: .5rem;
-    font-size: .97rem;
+    font-size: 1.1rem;
     line-height: 1.5;
 }
 
@@ -81,8 +81,8 @@ main {
 
 .mv-card p {
     color: var(--text-color);
-    font-size: .905rem;
-    line-height: 1.43;
+    font-size: 1rem;
+    line-height: 1.45;
 }
 
 @media (min-width:900px) {

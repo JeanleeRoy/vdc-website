@@ -25,6 +25,7 @@
     text-align: center;
     border-radius: var(--br-radius-sm);
     border: 1px solid var(--greyish-blue-a);
+    cursor: default;
 }
 
 .ab-pillar .image {
@@ -39,10 +40,11 @@
 
 .ab-pillar h3 {
     margin: .6rem 0;
+    font-size: 1.35rem;
 }
 
 .ab-pillar p {
-    font-size: .95rem;
+    font-size: 1.05rem;
 }
 
 @media (min-width: 700px) {
