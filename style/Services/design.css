@@ -1,0 +1,18 @@
+.supervicion-container {
+    width: 100%;
+    max-width: var(--max-width);
+    padding: .5rem;
+    margin: auto;
+}
+
+.supervicion-container img {
+    width: 100%;
+    margin: 1rem 0;
+    border-radius: var(--br-radius-md);
+}
+
+@media (min-width: 678px) {
+    .supervicion-container {
+        padding: 2rem;
+    }
+}
