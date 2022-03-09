@@ -42,8 +42,8 @@ const footerContent = () => (`
         </div>
         <p class="footer-copyright">
             © VDC Proyectos 2022 &nbsp;|&nbsp; Desarrollado por 
-            <a href="http://" target="_blank">Jesús Sullón</a>, 
-            <a href="http://" target="_blank">Jeanlee Barreto</a>
+            <a href="https://www.linkedin.com/in/jes%C3%BAssull%C3%B3n" target="_blank">Jesús Sullón</a>, 
+            <a href="https://www.linkedin.com/in/jeanlee-barreto/" target="_blank">Jeanlee Barreto</a>
         </p>
     </div>
 `)
