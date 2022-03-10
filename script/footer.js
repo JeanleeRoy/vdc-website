@@ -13,7 +13,7 @@ const footerContent = () => (`
                 <ul>
                     <li><img src="/img/map-icon.png" alt="Dirección"> Av. Mariscal Castilla 1456, Oficina 101, Santiago de Surco</li>
                     <li><img src="/img/phone-icon.png" alt="Teléfono"> +51 960189815</li>
-                    <li><img src="/img/at-icon.png" alt="mail"> contacto@vdcconsultores.com</li>
+                    <li><img src="/img/at-icon.png" alt="mail"> contacto@vdcproyectos.com</li>
                 </ul>
             </div>
             <div class="footer-services foo-use">
@@ -41,9 +41,10 @@ const footerContent = () => (`
             <a href="https://www.linkedin.com/company/vdcproyectos" target="_blank"><img src="/img/linkedin.png" alt=""></a>
         </div>
         <p class="footer-copyright">
-            © VDC Proyectos 2022 &nbsp;|&nbsp; Desarrollado por 
+            © VDC Proyectos - 2022 
+            <!--&nbsp;|&nbsp; Desarrollado por devs
             <a href="https://www.linkedin.com/in/jes%C3%BAssull%C3%B3n" target="_blank">Jesús Sullón</a>, 
-            <a href="https://www.linkedin.com/in/jeanlee-barreto/" target="_blank">Jeanlee Barreto</a>
+            <a href="https://www.linkedin.com/in/jeanlee-barreto/" target="_blank">Jeanlee Barreto</a>->>
         </p>
     </div>
 `)
